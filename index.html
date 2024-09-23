@@ -5,183 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClaireDan</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Museo+Moderno:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-    <style>
-
-
-        :root {
-            --border-radius: 70px; 
-            --font-family: Helvetica, Arial, sans-serif;
-        }
-
-        h2{
-            font-family: var(--font-family);
-            font-size: 45px;
-            
-            color: white;
-        }
-
-        .underline{
-
-            width: 100%;
-            height: 1px;
-            background-color: #ABABAB;
-        }
-
-        .text-color-primary{
-
-            color: #ABABAB;
-            font-size: 1rem;
-            line-height: 1.5em;
-            font-family: var(--font-family);
-        }
-
-        .footer-underline{
-
-            display: flex;
-            justify-content: center; 
-            padding: 12px;
-        }
-
-        .button{
-
-            background: linear-gradient(to left, #00BCE6, #D500F9);
-            transition: 0.3s ease;
-            padding-top: 1.25rem;
-            padding-bottom: 1.25rem;
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
-            border-radius: 3rem;
-            border: none;
-            width: fit;
-            height: fit;
-            text-decoration: none;
-            font-family: var(--font-family);
-
-            color: white;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .button:hover{
-
-            scale: 0.97;
-        }
-
-
-        body {
-            background-color: #131722; 
-            padding-top: 2vh;
-        }
-
-        #container{
-
-            max-width: 1280px;
-            margin-left: auto;
-            margin-right: auto;
-            
-        }
-
-        #navbar{
-
-            width: 70vw;
-            height: 5vh;
-            margin: auto auto auto auto;
-            
-            border-radius: var(--border-radius);   
-
-        }
-
-        #navbar-background{
-
-            width: 100%;
-            height: 100%;
-            background-color: #8C8C8C;
-            opacity: 20%;
-
-            border-radius: var(--border-radius);
-        }
-
-        .spacer-large{
-
-            padding-top: 7rem;
-        }
-
-        .spacer-small{
-
-            padding-top: 2rem;
-        }
-
-        #about-us-wrapper{
-
-            display: flex;
-
-        }
-
-        #about-us-image{
-
-            border-radius: 18px;
-            height: 18rem;
-            max-width: 100%;
-        }
-
-        .column{
-
-            flex: 1; /* Sloupce mají stejnou šířku */
-            padding: 20px;
-            margin: 10px;
-
-        }
-
-        .logo-small{
-
-            width: 4rem;
-            height: 4rem;
-        }
-
-        .footer-body{
-
-            padding: 12px;
-            padding-left: 5rem;
-            padding-right: 5rem;
-        }
-
-
-    </style>
 </head>
 <body>
 
-<div id="navbar">
-    <div id="navbar-background">
-
-    </div>
-</div>
+    <header>
+        <div class="navbar-wrapper">
+            <div class="navbar-background">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" alt="Logo" />
+                        </a>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Složený úrok</a></li>
+                        <li><a href="budgeting.html">Rozpočtový kalkulačka</a></li>
+                        <li><a href="about-us.html">O projektu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
 <div class="spacer-large"></div>
 
 <div id="container">
 
-    <div id="about-us-wrapper">
+    <div id="hero-wrapper">
 
         <div class="column">
-            <img src="images/Tradingview.jpg" id="about-us-image" alt="Tradingview" />
-            
-        </div>
-
-        <div class="column">
-            <h2>ClaireDan je revoluční nástroj</h2>
+            <h2>Finanční plánování</h2>
             <p class="text-color-primary">
-                Jsme inovativní společnost zaměřená na poskytování nejlepších služeb našim klientům. 
-                <br><br> 
-                Na projektu se podílel Jakub Krejčí a Kryštof Dvořák 
+                S lehkostí, jako nikdy předtím.
             </p>
-            <div class="spacer-small"></div>
+            <div class="spacer-xsmall"></div>
             <a href="homepage.html" class="button"> 
                 Kalkulačka
+                <img src="images/arrow.svg" class="arrow-image" alt="Tradingview" />
             </a>
         </div>
+
+        <div class="column">
+            <img src="images/trading-hero.png" id="hero-image" alt="Tradingview" />
+        </div>
+
     </div>
+
+    <div class="spacer-large"></div>  
+
+    <section class="logos">
+        <div class="logo-item"><img src="images/image-webull.svg" alt="Vents logo"></div>
+        <div class="logo-item"><img src="images/image-td.svg" alt="Hyundai logo"></div>
+        <div class="logo-item"><img src="images/image-tradingview.svg" alt="Prana logo"></div>
+        <div class="logo-item"><img src="images/image-xtb.svg" alt="Ventoxx logo"></div>
+    </section>
+
+    <div class="spacer-large"></div>  
+
+    <section class="interest-calculator">
+        <h2>Kalkulačka složeného úroku</h2>
+        <div class="calculator-wrapper">
+            <div class="calculator-input">
+                <label for="initial-capital">Počáteční kapitál (Kč)</label>
+                <input type="number" id="initial-capital" placeholder="12000">
+            </div>
+            <div class="calculator-input">
+                <label for="monthly-investment">Měsíční investice (Kč)</label>
+                <input type="number" id="monthly-investment" placeholder="3000">
+            </div>
+            <div class="calculator-input">
+                <label for="annual-interest">Očekávaný roční úrok (%)</label>
+                <input type="number" id="annual-interest" placeholder="8">
+            </div>
+            <div class="calculator-input">
+                <label for="years">Doba úročení (let)</label>
+                <input type="number" id="years" placeholder="25">
+            </div>
+            <div class="calculator-buttons">
+                <button class="calculate-button">Spočítej</button>
+                <button class="reset-button">Vymazat</button>
+            </div>
+        </div>
+    </section>
 
     <div class="spacer-large"></div>  
 
@@ -195,7 +102,7 @@
         <div class="underline">
         
         <div class="footer-underline">
-            <p class="text-color-primary">Copyright © 2024 Weblify | All Rights Reserved </p>
+            <p class="text-color-primary">Copyright © 2024 CEOs anti-trader hnutí | All Rights Reserved </p>
         </div>
 
       </div>
