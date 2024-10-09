@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Test Fontu Final Six</title>
     <style>
-        /* Import fontu z Adobe */
-        @import url("https://use.typekit.net/wcy8wuf.css");
+        /* Import fontu z Adobe Typekit */
+        @import url("https://p.typekit.net/p.css?s=1&k=wcy8wuf&ht=tk&f=37746.37747.37754.37755.47587.47588&a=12536226&app=typekit&e=css");
 
-        
+        /* Definice stylu pro font Final Six */
         .custom-font {
-            font-family: "finalsix", sans-serif; 
-            font-size: 24px; 
+            font-family: "finalsix", sans-serif; /* Font Final Six */
+            font-size: 24px; /* Nastavení velikosti písma */
+        }
+
+        /* Styl pro zobrazení kódu */
+        .code-block {
+            background-color: #f4f4f4; /* Světle šedé pozadí pro blok kódu */
+            padding: 10px; /* Padding kolem textu */
+            border-radius: 5px; /* Zaoblení rohů */
+            overflow-x: auto; /* Možnost posouvání při delším kódu */
+            font-family: monospace; /* Použití monospace fontu pro kód */
         }
     </style>
 </head>
 <body>
-    <p class="custom-font">Test ž/z a ť/t.</p>
+    <h1 class="custom-font">Ahoj světe!</h1>
+    <p class="custom-font">Tady je ž a ť.</p>
+
+    <h2>Použitý kód:</h2>
+    <pre class="code-block">
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;cs&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Test Fontu Final Six&lt;/title&gt;
+            &lt;style&gt;
+                @import url(&quot;https://p.typekit.net/p.css?s=1&amp;k=wcy8wuf&amp;ht=tk&amp;f=37746.37747.37754.37755.47587.47588&amp;a=12536226&amp;app=typekit&amp;e=css&quot;);
+
+                .custom-font {
+                    font-family: &quot;finalsix&quot;, sans-serif;
+                    font-size: 24px;
+                }
+                .code-block {
+                    background-color: #f4f4f4;
+                    padding: 10px;
+                    border-radius: 5px;
+                    overflow-x: auto;
+                    font-family: monospace;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1 class=&quot;custom-font&quot;&gt;Ahoj světe!&lt;/h1&gt;
+            &lt;p class=&quot;custom-font&quot;&gt;Tady je ž a ť.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
 </body>
 </html>
